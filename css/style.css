@@ -426,3 +426,99 @@ a:focus-visible {
     }
 
 }
+
+/* ---------- QR action ---------- */
+
+.qr-action {
+    margin-top: 18px;
+}
+
+.qr-action__button {
+    padding: 4px 8px;
+
+    border: 0;
+    background: transparent;
+
+    color: var(--color-text-secondary);
+
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 550;
+
+    cursor: pointer;
+
+    transition: color 150ms ease;
+}
+
+.qr-action__button:hover {
+    color: var(--color-accent);
+}
+
+
+/* ---------- QR view ---------- */
+
+.qr-view {
+    position: fixed;
+    inset: 0;
+
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 28px;
+
+    background: #ffffff;
+}
+
+.qr-view[hidden] {
+    display: none;
+}
+
+.qr-view__content {
+    width: 100%;
+    max-width: 380px;
+
+    text-align: center;
+}
+
+.qr-view__label {
+    margin: 0 0 28px;
+
+    color: var(--color-text);
+
+    font-size: 1.3rem;
+    font-weight: 650;
+}
+
+.qr-view__code {
+    display: block;
+
+    width: min(76vw, 300px);
+    height: auto;
+
+    margin: 0 auto;
+}
+
+.qr-view__name {
+    margin: 28px 0 0;
+
+    color: var(--color-text);
+
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.qr-view__title {
+    margin: 4px 0 0;
+
+    color: var(--color-accent);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.qr-view__back {
+    margin-top: 30px;
+}

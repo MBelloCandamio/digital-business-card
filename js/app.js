@@ -8,7 +8,9 @@
 
 const shareButton = document.querySelector("#share-card");
 const shareFeedback = document.querySelector("#share-feedback");
-
+const showQrButton = document.querySelector("#show-qr");
+const hideQrButton = document.querySelector("#hide-qr");
+const qrView = document.querySelector("#qr-view");
 
 /* ---------- Card information ---------- */
 
@@ -117,5 +119,30 @@ function clearFeedback() {
 if (shareButton) {
 
     shareButton.addEventListener("click", shareCard);
+
+}
+
+/* ---------- QR view ---------- */
+
+function showQr() {
+    qrView.hidden = false;
+
+    document.body.style.overflow = "hidden";
+}
+
+function hideQr() {
+    qrView.hidden = true;
+
+    document.body.style.overflow = "";
+}
+
+
+/* ---------- QR event listeners ---------- */
+
+if (showQrButton && hideQrButton && qrView) {
+
+    showQrButton.addEventListener("click", showQr);
+
+    hideQrButton.addEventListener("click", hideQr);
 
 }

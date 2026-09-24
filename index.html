@@ -91,6 +91,17 @@
 
         </section>
 
+        <!-- QR action -->
+        <section class="qr-action">
+            <button
+                class="qr-action__button"
+                id="show-qr"
+                type="button"
+            >
+                Show QR
+            </button>
+        </section>
+
 
         <!-- Contact options -->
         <nav class="contact-actions" aria-label="Contact options">
@@ -148,6 +159,41 @@
         </footer>
 
     </main>
+
+    <!-- QR view -->
+    <section class="qr-view" id="qr-view" hidden>
+
+        <div class="qr-view__content">
+
+            <p class="qr-view__label">
+                Scan to connect
+            </p>
+
+            <img
+                class="qr-view__code"
+                src="assets/images/contact-qr.svg"
+                alt="QR code to open my digital business card"
+            >
+
+            <p class="qr-view__name">
+                Martin Bello
+            </p>
+
+            <p class="qr-view__title">
+                Marine Biologist & Data Analist
+            </p>
+
+            <button
+                class="button button--secondary qr-view__back"
+                id="hide-qr"
+                type="button"
+            >
+                Back to card
+            </button>
+
+        </div>
+
+    </section>
 
 
     <!-- JavaScript -->

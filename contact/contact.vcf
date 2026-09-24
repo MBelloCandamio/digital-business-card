@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:4.0
+KIND:individual
+FN:Alex Morgan
+N:Morgan;Alex;;;
+ORG:Ocean Research Solutions
+TITLE:Marine Biologist
+ROLE:Fisheries\, Aquaculture & Seafood Supply Chain
+EMAIL;TYPE=work:alex.morgan@example.com
+TEL;TYPE=cell;VALUE=uri:tel:+34600123456
+URL:https://example.com
+NOTE:Marine Biologist specializing in fisheries\, aquaculture and seafood supply chains.
+END:VCARD
